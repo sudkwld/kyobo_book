@@ -1,0 +1,912 @@
+@charset "utf-8";
+
+#container {
+  width: 950px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+#side_nav_left {
+  position: absolute;
+  top: 0;
+  left: -110px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #dadada;
+}
+
+.left_navbox {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+#sub_nav {
+  width: 950px;
+  margin-top: 15px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dadada;
+}
+
+#sub_nav li {
+  margin-right: 10px;
+  float: left;
+}
+
+#sub_nav li a {
+  font-size: 12px;
+  color: #666;
+}
+
+#sub_nav .sub_nav_button {
+  border: 1px solid #dadada;
+  padding: 5px 8px;
+}
+
+#sub_nav img[alt="sub_right"] {
+  margin-top: 10px;
+}
+
+#sub_nav img[alt="sub_nav"] {
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+#sub_nav_home {
+  margin-top: 6px;
+}
+
+.content_introduction {
+  width: 950px;
+  display: flex;
+  margin-top: 35px;
+}
+
+.content_thumbnail {
+  width: 200px;
+  height: 100%;
+}
+
+.content_thumbnail ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.content_thumbnail li {
+  float: left;
+}
+
+.content_thumbnail li a {
+  color: #666;
+}
+
+.content_thumbnail .content_store {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 10px 0;
+  background-color: #fff;
+  border: 1px solid #dadada;
+}
+
+.content_store a {
+  color: red;
+  font-weight: 900;
+}
+
+.content_box {
+  width: 705px;
+  margin-left: 45px;
+}
+
+.content_box .content_md li {
+  float: left;
+  margin-right: 5px;
+}
+
+.content_title {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+.content_title h1 {
+  color: #3A60DF;
+  font-size: 24px;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.content_title h1 span {
+  font-size: 14px;
+  color: #555;
+}
+
+.content_author li {
+  float: left;
+  margin-right: 5px;
+  color: #000;
+  font-size: 12px;
+}
+
+.content_author li a {
+  color: #000;
+  font-size: 12px;
+}
+
+.content_author li a:hover {
+  color: #3A60DF;
+  text-decoration: underline;
+}
+
+.content_author li a span {
+  color: red;
+}
+
+.content_middle {
+  width: 705px;
+  padding: 30px 0 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.content_middle table tr {
+  height: 20px;
+}
+
+.content_middle table td {
+  font-size: 12px;
+  height: 25px;
+}
+
+.inform {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1px 5px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.content_middle .price {
+  color: red;
+  font-weight: 900;
+  font-size: 27px;
+}
+
+.sale {
+  color: #3A60DF;
+}
+
+.content_middle .point {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.content_middle .point li {
+  margin-right: 5px; 
+}
+
+.point li button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2px 4px;
+}
+
+.content_cart_quantity {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.content_cart_quantity span {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.cart_quantity {
+  background-color: #fff;
+  padding: 7px 10px 7px 40px;
+  margin-right: 5px;
+  border: 1px solid #aaa;
+}
+
+.content_cart_quantity img {
+  background-color: #fff;
+  padding: 5px;
+  margin-right: 2px;
+  border: 1px solid #aaa;
+}
+
+.content_cart_btn {
+  width: 100%;
+}
+
+.content_cart_btn button {
+  padding: 10px 10px;
+  width: 136px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+}
+
+.content_cart_btn button a {
+  font-size: 14px;
+}
+
+.content_cart_btn button:first-of-type {
+  background-color: #5e6b9f;
+}
+
+.content_cart_btn button:first-of-type a {
+  color: #fff;
+}
+
+.content_cart_btn button:nth-of-type(2) {
+  background-color: #7b8ed1;
+}
+
+.content_cart_btn button:nth-of-type(2) a {
+  color: #fff;
+}
+
+.other_book {
+  width: 950px;
+  border-top: 5px solid #dadada;
+  margin: 30px 0;
+  position: relative;
+}
+
+.other_book_title {
+  width: 100%;
+}
+
+.other_book_title h3 {
+  font-size: 15px;
+}
+
+.other_prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.other_next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.other_book_container {
+  width: 900px;
+  height: 300px;
+  margin-left: 25px;
+  padding-top: 40px;
+  display: none;
+  justify-content: space-between;
+}
+
+.other_book_box {
+  width: 140px;
+  text-align: center;
+}
+
+.other_book_box h3 {
+  margin: 0;
+}
+
+.other_book_box h4 {
+  margin:0;
+}
+
+.product_introduction {
+  width: 750px;
+  margin-top: 40px;
+  padding: 0 30px 0 20px;
+  float: left;
+}
+
+.side_product {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-top: 40px;
+}
+
+.side_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 10px 0;
+}
+
+.side_title h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.side_title span {
+  font-size: 12px;
+}
+
+.side_best {
+  padding: 10px;
+  border: 1px solid #dadada;
+}
+
+.side_product_box {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.side_product_img {
+  width: 60px;
+  height: 80px;
+  border: 1px solid #dadada;
+}
+
+.side_product_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.side_product_sub {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.side_product_sub h4 {
+  margin: 0;
+}
+
+.side_product_sub h4:last-of-type a{
+  color: red;
+  font-size: 12px;
+}
+
+.side_product_sub a {
+  font-weight: 500;
+}
+
+.side_numb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  font-weight: 900;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: #fff;
+}
+
+.side_new {
+  padding: 10px;
+}
+
+.product_index {
+  width: 100%;
+  border: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.product_index li {
+  width: 150px;
+  padding: 8px 8px;
+  border-right: 1px solid #dadada;
+}
+
+.product_index li span {
+  color: #5e6b9f;
+}
+
+.product_index li a {
+  font-size: 13px;
+}
+
+.product_index:last-of-type {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.more_detail button {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  margin: 35px 0 10px;
+  float: right;
+}
+
+.more_detail table {
+  width: 100%;
+  border-top: 1px solid #dadada;
+}
+
+.more_detail table tr {
+  height: 40px;
+  font-size: 12px;
+  border-bottom: 1px solid #dadada;
+}
+
+.more_detail table tr td:first-of-type {
+  border-right: 1px solid #dadada;
+  text-align: center;
+}
+
+.more_detail table tr td:last-of-type {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.introduction_title {
+  padding: 25px 0 10px;
+}
+
+.introduction_title h3 {
+  font-size: 15px;
+}
+
+.introduction_title h5 {
+  margin: 0;
+}
+
+.introduction_title h5:last-of-type {
+  padding-top: 30px;
+}
+
+.introduction_title ul li {
+  float: left;
+  padding-top: 5px;
+}
+
+.introduction_title ul li a {
+  font-size: 12px;
+}
+
+.book_topic li {
+  border: 2px solid #dadada;
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.introduction_title p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.detail_img_title h3 {
+  font-size: 15px;
+}
+
+.detail_img img {
+  width: 100%;
+}
+
+.author_introduction {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 20px;
+}
+
+.author_introduction h3 {
+  width: 100%;
+  height: 20px;
+  font-size: 15px;
+}
+
+.author_introduction .portrait {
+  width: 105px;
+  height: 131px;
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+}
+
+.author_wrap {
+  width: 595px;
+}
+
+.author_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.author_box ul li {
+  float: left;
+}
+
+.author_box h4 {
+  font-size: 14px;
+}
+
+.author_box .author_btn li {
+  border: 1px solid #dadada;
+  background-color: #fff;
+  padding: 3px 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.author_box .author_btn li img {
+  margin-right: 1px;
+}
+
+.author_job li {
+  border: 1px solid #dadada;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 4px 8px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.author_hide {
+  display: none;
+}
+
+.author_box p {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.author_box .more {
+  line-height: 15px;
+}
+
+.author_box:last-of-type {
+  display: block;
+}
+
+.author_box:last-of-type span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.author_hide_btn {
+  font-size: 12px;
+}
+
+.more {
+  background-color: #fff;
+  border: 1px solid #dadada;
+}
+
+.author_other_book {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  border: 1px solid #dadada;
+  margin-top: 30px;
+}
+
+.otherbook_title img[alt="sub_right"] {
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+
+.otherbook_title h3 {
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.otherbook_prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  cursor: pointer;
+}
+
+.otherbook_next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  cursor: pointer;
+}
+
+.author_other_wrap {
+  width: 580px;
+  margin: 0 auto;
+  display: none;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.author_book h4 {
+  margin: 0;
+  width: 120px;
+}
+
+.book_contents p {
+  width: auto;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.book_contents button {
+  border: 1px solid #dadada;
+  background-color: #fff;
+  padding: 2px 5px;
+  margin-left: 5px;
+}
+
+.intothe_book {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.last_close {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.review {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.review h2 {
+  font-size: 16px;
+}
+
+.review_container {
+  border: 1px solid #dadada;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.review_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  background-color: #f7f7f7;
+}
+
+.review_title h4 {
+  font-size: 12px;
+}
+
+.review_title h4 span {
+  font-size: 12px;
+  padding: 2px 5px;
+  font-weight: 500;
+  border: 1px solid #dadada;
+}
+
+.review_box {
+  position: relative;
+  border-right: 1px solid #dadada;
+  width: 50%;
+  height: 160px;
+}
+
+.klover_img {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.review h2 {
+  padding-top: 50px;
+}
+
+.review_box h5 {
+  position: absolute;
+  bottom: 5px;
+  left: 30px;
+}
+
+.review_box h5 span {
+  font-size: 22px;
+}
+
+.klover_heart {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+}
+
+.review_emoji {
+  position: relative;
+}
+
+.emoji {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+
+.opinion {
+  position: absolute;
+  bottom: 10px;
+  left: 32px;
+  display: flex;
+  width: 330px;
+}
+
+.opinion li {
+  padding-right: 12px;
+}
+
+.addreview {
+  width: 100%;
+  height: 220px;
+}
+
+.addreview_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addreview p {
+  text-align: center;
+  font-size: 12px;
+  transform: translateY(70px);
+}
+
+.addreview li {
+  float: left;
+  border: 1px solid #dadada;
+  padding: 10px 20px;
+}
+
+.purchase li:first-of-type {
+  border-right: none;
+}
+
+.help li:first-of-type {
+  border-right: none;
+}
+
+
+
+.booklog_title h3 {
+  font-size: 16px;
+}
+
+.booklog_title h3 span {
+  color: #5e6b9f;
+}
+
+.log_btn {
+  font-size: 12px;
+  padding: 2px 5px;
+  margin-left: 5px;
+  color: #000 !important;
+  border: 1px solid #dadada;
+}
+
+.booklog {
+  padding-top: 30px;
+}
+
+.booklog p {
+  font-size: 12px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.booklog_title h5 {
+  font-size: 11px;
+}
+
+.booklog_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booklog:last-of-type {
+  padding-bottom: 50px;
+}
+
+.refund table {
+  font-size: 12px;
+}
+
+.refund_title h3, .refund_title h5{
+  margin: 0;
+}
+
+.refund_title h3 {
+  font-size: 16px;
+}
+
+.refund_title h5 {
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 25px;
+}
+
+.refund table td:first-of-type {
+  font-size: 12px;
+  font-weight: 900;
+  width: 150px;
+  border-right: 1px solid #dadada;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.refund table td:last-of-type {
+  padding-left: 15px;
+} 
+
+.refund table {
+  border: 1px solid #dadada;
+}
+
+.refund table td {
+  padding: 15px 0;
+  border: 1px solid #dadada;
+}
+
+.sub_gift {
+  width: 100%;
+  background-color: red;
+  margin-top: 80px;
+}
+
+.gift_top {
+  width: 100%;
+  position: relative;
+}
+
+.gift_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.gift_title h3 {
+  font-size: 16px;
+}
+
+.gift_top_wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top_box {
+  width: 180px;
+  height: 258px;
+  background-color: darkblue;
+}
+
+.gift_top_prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  background-color: gold;
+}
+
+.gift_top_next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+  background-color: gold;
+}

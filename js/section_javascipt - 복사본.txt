@@ -1,0 +1,72 @@
+//이럴 땐 이런 책 
+    //background-color 변경
+    const thisTag = document.querySelectorAll('.this_tag');
+    let tagColor = ["#59a1c2", "#96649f", "#cb6b58", "#5e6b9e", "#dfaa1d", "#5f9943"];
+
+    (function () {
+      for (let i = 0; i < thisTag.length; i++) {
+        thisTag[i].style.backgroundColor = tagColor[i];
+      }
+    })();
+    //slide
+   (function () {
+      const thisBookSlide = document.querySelectorAll('.this_slide_box')
+      const thisBookPrev = document.querySelector('.this_prev')
+      const thisBookNext = document.querySelector('.this_next')
+      let thisBookIndex = 1
+
+      thisBookAdd = (thisnum) => {
+        thisBookLogic(thisBookIndex += thisnum)
+      }
+
+      thisBookSlide = (thisnum) => {
+        thisBookLogic(thisBookIndex = thisnum)
+      }
+
+      thisBookLogic = (thisnum) => {
+        if (thisnum > thisBookSlide.length) {
+          thisBookIndex = 1
+        }
+        if (thisnum < 1) {
+          thisBookIndex = thisBookSlide.length
+        }
+        for (let i = 0; i < thisBookSlide.length; i++) {
+          const element = thisBookSlide[i];
+          console.log(thisBookSlide)
+          element.classList.remove('ch_on')
+        }
+        thisBookSlide[thisBookIndex - 1].classList.add('ch_on')
+      }
+
+      thisBookLogic(thisBookIndex)
+
+      thisBookPrev.addEventListener('click', () => {
+        thisBookAdd(-1)
+      })
+
+      thisBookNext.addEventListener('click', () => {
+        thisBookAdd(1)
+      })
+    })();
+    //라이징스타 지금 뜨는 HOT템
+    //클릭하면 넘어가는 slide
+    const centerSlides = document.querySelector(".center_slide ul");
+    const centerPrev = document.querySelector(".center_left");
+    const centerNext = document.querySelector(".center_right");
+
+    (function addEvent() {
+      centerPrev.addEventListener('click', translateslides.bind(this, 1));
+      centerNext.addEventListener('click', translateslides.bind(this, -1));
+    })();
+
+    function translateslides(direction) {
+      const selectedBtn = (direction === 1) ? 'prev' : 'next'; //direction이 1일 때 prev 아닐 시 next
+      centerSlides.style.transitionDuration = '800ms';
+      centerSlides.style.transform = `translateX(${direction * (103 / 6.2)}%)`;
+      centerSlides.ontransitionend = () => reorganizeEl(selectedBtn);
+    }
+
+    function reorganizeEl(selectedBtn) {
+      centerSlides.removeAttribute('style');
+      (selectedBtn === 'prev') ? centerSlides.insertBefore(centerSlides.lastElementChild, centerSlides.firstElementChild) : centerSlides.appendChild(centerSlides.firstElementChild);
+    }
